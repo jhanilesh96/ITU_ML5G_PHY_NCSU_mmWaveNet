@@ -16,7 +16,7 @@ Members:
 ### How to Use:
 1. Download the [Dataset](https://research.ece.ncsu.edu/ai5gchallenge/#datasets)
 1. Download **gen_channel_ray_tracing_rev.m** from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
-1. For Training: Use line search to find L for training SNR -15dB, -10dB and 0dB by running **Compare_SOMP_sparsity.m**
+1. For Training: Use line search to find L for training SNR -15dB, -10dB and 0dB by running **training.m**
 
 ### For Test: 
   1. First download the test data pilots from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
