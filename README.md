@@ -10,6 +10,9 @@ Members:
 ### Report
 https://github.com/jhanilesh96/ITU_ML5G_PHY_NCSU_mmWaveNet/blob/main/AI_5G_Challenge_mmWave_Report_v3.pdf
 
+### Test Results
+https://hkustconnect-my.sharepoint.com/:f:/g/personal/nkkundu_connect_ust_hk/Elp2rmaJTCRPphtFSEQjJ1EBxm2kSwETDDJQG1GsbKFnMQ?e=PyG6OY
+
 ### How to Use:
 1. Download the Datasets: https://research.ece.ncsu.edu/ai5gchallenge/#datasets
 1. Download gen_channel_ray_tracing_rev.mat from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
