@@ -1,15 +1,11 @@
-function [H_est index_set]= SOMP_v2(yw,Upsilon_w,Psi,K,M,Lr,Nr,Nt,epsilon)
-% K=Nfft; M=Ntrain;
-% epsilon=1e-2;
-% epsilon=0.99*var_n;
+function [H_est index_set]= SWOMP(yw,Upsilon_w,Psi,K,M,Lr,Nr,Nt,epsilon)
+
 
 sz=size(Upsilon_w);
 x=zeros(sz(2),1);
-%OMP
 residual=yw;
 MSE= trace(residual'*residual)/(K*M*Lr);
 
-% H_est=MSE;
 index_set=[];
 iter=0;
 while(MSE>epsilon)
@@ -26,9 +22,6 @@ while(MSE>epsilon)
    MSE= trace(residual'*residual)/(K*M*Lr); %MSE update
   
 end
-% p=length(index_set);*
-% tempx=zeros()
-% for j=1:lenght(index_set)
 
 h=Psi(:,index_set)*x;
 H_est= reshape(h,[Nr,Nt,K]);

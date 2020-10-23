@@ -1,3 +1,12 @@
+% Code by mmWaveNet for ITU AI/ML 5G Challenge
+% Neel Kanth Kundu (nkkundu@connect.ust.hk)
+% Nilesh Kumar Jha (nkjha@connect.ust.hk)
+% Amartansh Dubey (adubey@connect.ust.hk)
+
+% Download Test pilots from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
+% Change Dataset_pilots=20/40/80 and Dataset_snr = 1/2/3
+% References:
+% [1] J. Rodríguez-Fernández, N. González-Prelcic, K. Venugopal and R. W. Heath, "Frequency-Domain Compressive Channel Estimation for Frequency-Selective Hybrid Millimeter Wave MIMO Systems," IEEE Transactions on Wireless Communications, vol. 17, no. 5, pp. 2946-2960, May 2018.
 
 clear
 Dataset_pilots = 40;
@@ -90,7 +99,7 @@ for i = 1:length(y(:,1,1))
         spar=3;
     end
 
-    [H_est_spar,index_set2]= SOMP_sparse(y_i,Upsilon_w,Psi,Nfft,Ntrain,Lr,Nr,Nt,spar);
+    [H_est_spar,index_set2]= MSWOMP(y_i,Upsilon_w,Psi,Nfft,Ntrain,Lr,Nr,Nt,spar);
     H(i,:,:,:) = H_est_spar;
     if mod(i,50) == 0
         [i,length(y(:,1,1))]
