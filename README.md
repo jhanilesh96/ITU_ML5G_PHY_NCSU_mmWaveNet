@@ -7,6 +7,9 @@ Members:
 2) Nilesh Kumar Jha (nkjha@connect.ust.hk)
 3) Amartansh Dubey (adubey@connect.ust.hk)
 
+### Report
+https://github.com/jhanilesh96/ITU_ML5G_PHY_NCSU_mmWaveNet/blob/main/AI_5G_Challenge_mmWave_Report_v3.pdf
+
 ### How to Use:
 1. Download the Datasets: https://research.ece.ncsu.edu/ai5gchallenge/#datasets
 1. Download gen_channel_ray_tracing_rev.mat from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
