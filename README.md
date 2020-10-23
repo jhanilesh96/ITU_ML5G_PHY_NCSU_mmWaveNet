@@ -8,9 +8,10 @@ Members:
 3) Amartansh Dubey (adubey@connect.ust.hk)
 
 How to Use:
-1. Item 1 Download the Datasets: https://research.ece.ncsu.edu/ai5gchallenge/#datasets
-1. Item 2 Download gen_channel_ray_tracing_rev.mat from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
-1. Item 3 For Training: Use line search to find $L^{*}$ for training SNR -15dB, -10dB and 0dB by running Compare_SOMP_sparsity.mat
-1. Item 4a For Test: First download the test data pilots from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
-1. Item 4b Run test.mat by changing the variables Dataset_pilots = 20/40/80  and Dataset_snr = 1/2/3 to get the 9 files containing the estimated channels
+1. Download the Datasets: https://research.ece.ncsu.edu/ai5gchallenge/#datasets
+1. Download gen_channel_ray_tracing_rev.mat from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
+1. For Training: Use line search to find $L^{*}$ for training SNR -15dB, -10dB and 0dB by running Compare_SOMP_sparsity.mat
+1. For Test: 
+  1. First download the test data pilots from https://research.ece.ncsu.edu/ai5gchallenge/#datasets
+  1. Run test.mat by changing the variables Dataset_pilots = 20/40/80  and Dataset_snr = 1/2/3 to get the 9 files containing the estimated channels
 
