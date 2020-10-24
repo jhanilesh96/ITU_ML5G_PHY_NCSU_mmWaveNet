@@ -8,7 +8,7 @@ Members:
 3) Amartansh Dubey (adubey@connect.ust.hk)
 
 ### Report
-[report](https://github.com/jhanilesh96/ITU_ML5G_PHY_NCSU_mmWaveNet/blob/main/AI_5G_Challenge_mmWave_Report_v3.pdf)
+[report](https://github.com/jhanilesh96/ITU_ML5G_PHY_NCSU_mmWaveNet/blob/main/AI_5G_Challenge_mmWave_Report.pdf)
 
 ### Test Results
 [Test Results](https://hkustconnect-my.sharepoint.com/:f:/g/personal/nkkundu_connect_ust_hk/Elp2rmaJTCRPphtFSEQjJ1EBxm2kSwETDDJQG1GsbKFnMQ?e=PyG6OY)
