@@ -36,7 +36,7 @@ fs = 1760*MHz; %Sampling frequency
 Ts = 1/fs;
 
 % Training parameters
-Nc = 50; % Number of channels available in the channel data set up to 10000
+Nc = 10000; % Number of channels available in the channel data set up to 10000
 Ntrain=100; % Number of training symbols to be received for each one of the available channels
 
 
@@ -95,7 +95,6 @@ for ite=1:1:Gr
 end
 
 Psi=kron(conj(At),Ar);
-% A=Phi*Psi;
 
 NMSE_SOMP=ones(length(SNR),1);
 NMSE_MSOMP=ones(length(SNR),1);
@@ -106,10 +105,9 @@ tic
 for s=1:length(SNR)
     err1=0;
     err2=0;
-%     err3=0;
     
 for j=1:Nc %Nc is number of channels 
-    Hk = gen_channel_ray_tracing_rev(j+4687,Nr,Nt,Nfft,Ts,rolloff,Mfilter); %NrxNt
+    Hk = gen_channel_ray_tracing_rev(j,Nr,Nt,Nfft,Ts,rolloff,Mfilter); %NrxNt
     var_n = Pt/snr(s);
     Noise = sqrt(var_n/2)*(randn(Nr,Ntrain,Nfft)+1i*randn(Nr,Ntrain,Nfft));
     SNRaux = zeros(Nfft,1);
